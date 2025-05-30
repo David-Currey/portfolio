@@ -303,3 +303,62 @@ h2::after {
     text-decoration: underline;
 }
 
+
+/* RESPONSIVENESS */ 
+
+@media (max-width: 768px) {
+    body {
+        margin: 0 5%;
+    }
+
+    #section-1 {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    #nav-links {
+        border-left: none;
+        margin-left: 0;
+        padding-left: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    #about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #user-icon {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .contact-info-card {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .contact-item {
+        width: 100%;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        margin: 0 auto;
+    }
+
+    .skill-card {
+        margin: 0 auto;
+    }
+}
+
